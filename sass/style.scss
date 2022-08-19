@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+$font-family-sans-serif: 'Rubik', sans-serif;
+$theme-colors: (
+  "primary": hsl(231, 69%, 60%),
+  "secondary":hsl(0, 94%, 66%),
+  "warning": #f8f9fa,
+  "info":hsl(229, 31%, 21%),
+);
+
+$navbar-nav-link-padding-x: 1.5rem;
+$btn-padding-x: 30px;
+$nav-tabs-link-active-color: hsl(0, 94%, 66%);
+$nav-link-font-size: 18px;
+$nav-link-color: hsl(231, 69%, 60%);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.px-6 {
+  padding: 5px 30px !important;
+}
+
+.bg-1 {
+  width: 70%;
+  height: 75%;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  z-index: -1;
+  border-bottom-left-radius: 40%;
+}
+
+.bg-2 {
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+  border-bottom-right-radius: 40%;
+}
+
+.mt-6 {
+  margin-top: 90px;
+}
+
+.mt-7 {
+  margin-top: 160px;
+}
+
+.fs-10 {
+  font-size: 50px;
+}
+
+@media screen and (max-width:400px) {
+  .bg-1 {
+    top: 60px;
+  }
+
+  .title {
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .list {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+  }
+
+  .list>.nav-link {
+    margin: auto;
+    border: none;
+
+  }
+
+  .img {
+    width: 100% !important;
+  }
+
+  .bg-2 {
+    top: 50px;
+    width: 90%;
+    height: 100%;
+  }
+
+  .a>.mt-6,
+  .mt-7 {
+    margin-top: 30px;
+  }
+}
